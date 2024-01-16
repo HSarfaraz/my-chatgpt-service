@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "d4bb6741-e69d-4c55-8478-8bd78b504a1b",
+		"name": "my-chatgpt-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27400123"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/bot",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/bot?question=what are the top 5 books on productivity?&model=gpt-4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bot"
+					],
+					"query": [
+						{
+							"key": "question",
+							"value": "what are the top 5 books on productivity?"
+						},
+						{
+							"key": "model",
+							"value": "gpt-4"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/bot?question=what are the top 5 books on productivity?&model=gpt-4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"bot"
+							],
+							"query": [
+								{
+									"key": "question",
+									"value": "what are the top 5 books on productivity?"
+								},
+								{
+									"key": "model",
+									"value": "gpt-4"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 16 Jan 2024 17:24:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "1. \"Getting Things Done: The Art of Stress-Free Productivity\" by David Allen\n\n2. \"The 7 Habits of Highly Effective People: Powerful Lessons in Personal Change\" by Stephen R. Covey\n\n3. \"Deep Work: Rules for Focused Success in a Distracted World\" by Cal Newport\n\n4. \"The Power of Habit: Why We Do What We Do in Life and Business\" by Charles Duhigg\n\n5. \"Eat That Frog!: 21 Great Ways to Stop Procrastinating and Get More Done in Less Time\" by Brian Tracy"
+				}
+			]
+		}
+	]
+}
